@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    > <!-- Green background matching your design -->
+
+<!--email-->
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:text="Login"
+        android:fontFamily="@font/inter"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="100dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Login Button -->
+
+    <!-- Forgot Password -->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#3B3A34"
+        android:elevation="4dp"
+        android:text="Login"
+        android:fontFamily="@font/popreg"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <!-- Social Login Section -->
+
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+
+    <TextView
+        android:id="@+id/textForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Forgot your password ?"
+        android:fontFamily="@font/interb"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <!--password-->
+
+    <TextView
+        android:id="@+id/textConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/interb"
+        android:text="connect with"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/socialContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textForgot"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+    <!-- Signup Link -->
+
+    <LinearLayout
+        android:id="@+id/socialContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="727dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Dont have account ? Sign up"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/interb"
+        android:text="Google"
+        android:drawableStart="@drawable/googlelogo"
+        android:textColor="@color/black"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
